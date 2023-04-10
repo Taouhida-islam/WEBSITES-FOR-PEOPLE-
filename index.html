@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="btn-box">
+            <button id="btn1" onclick="openhtml()" ><i class="fa fa-html5"></i>  HTML</button>
+            <button id="btn2"  onclick="openCSS()"><i class="fa fa-css3"></i>css</button>
+            <button id="btn3"  onclick="openjs()"><i class="fa fa-codepen"></i>javascript</button>
+
+        </div>
+        <div class="content" id="con1">
+            <div class="content-left">
+                <h1>Learn HTML</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt modi dolorem? Perferendis sed explicabo veritatis, iste eius earum, quaerat voluptatibus assumenda, aspernatur sequ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorem possimus, repudiandae quisquam nostrum quam, quibusdam placeat eveniet modi error reiciendis consequatur quaerat recusandae id deserunt eius. Eos, obcaecati magni Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae iusto velit quis content-leftnatus! Possimus voluptas nisi omnis deleniti eligendi in minima. Assumenda eius ad magni maiores ut. Tenetur hic enim totam adipisci eligendi eveniet, non asperiores sint consequuntur iste similique quasi quod eaque ad, saepe excepturi maiores, a quas.</p>
+                <a href="">watch video</a>
+            </div>
+            <div class="content-right">
+                <img src="p1.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+        <div class="content" id="con2">
+            <div class="content-left">
+                <h1>Learn css</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt modi dolorem? Perferendis sed explicabo veritatis, iste eius earum, quaerat voluptatibus assumenda, aspernatur sequ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorem possimus, repudiandae quisquam nostrum quam, quibusdam placeat eveniet modi error reiciendis consequatur quaerat recusandae id deserunt eius. Eos, obcaecati magni Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae iusto velit quis content-leftnatus! Possimus voluptas nisi omnis deleniti eligendi in minima. Assumenda eius ad magni maiores ut. Tenetur hic enim totam adipisci eligendi eveniet, non asperiores sint consequuntur iste similique quasi quod eaque ad, saepe excepturi maiores, a quas.</p>
+                <a href="">watch video</a>
+            </div>
+            <div class="content-right">
+                <img src="clouds.png" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="content" id="con3">
+            <div class="content-left">
+                <h1>Learn javascript</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt modi dolorem? Perferendis sed explicabo veritatis, iste eius earum, quaerat voluptatibus assumenda, aspernatur sequ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorem possimus, repudiandae quisquam nostrum quam, quibusdam placeat eveniet modi error reiciendis consequatur quaerat recusandae id deserunt eius. Eos, obcaecati magni Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae iusto velit quis content-leftnatus! Possimus voluptas nisi omnis deleniti eligendi in minima. Assumenda eius ad magni maiores ut. Tenetur hic enim totam adipisci eligendi eveniet, non asperiores sint consequuntur iste similique quasi quod eaque ad, saepe excepturi maiores, a quas.</p>
+                <a href="">watch video</a>
+            </div>
+            <div class="content-right">
+                <img src="p2.jpg" alt="">
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    var content1 = document.getElementById("con1");
+    var content2 = document.getElementById("con2");
+    var content3 = document.getElementById("con3");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+
+
+
+function openhtml(){
+    content1.style.transform = "translateX(0)";
+    content2.style.transform = "translateX(100%)";
+    content3.style.transform = "translateX(100%)";
+
+    btn1.style.color= "#ff7846";
+    btn2.style.color= "#000";
+    btn3.style.color= "#000";
+
+    content1.style.transitionDelay = "0.3s";
+    content1.style.transitionDelay = "0s";
+    content1.style.transitionDelay = "0s";
+
+}
+
+function openCSS(){
+    content1.style.transform = "translateX(100%)";
+    content2.style.transform = "translateX(0)";
+    content3.style.transform = "translateX(100%)";
+    
+    btn2.style.color= "#ff7846";
+    btn1.style.color= "#000";
+    btn3.style.color= "#000";
+
+    
+    content1.style.transitionDelay = "0s";
+    content1.style.transitionDelay = "0.3s";
+    content1.style.transitionDelay = "0s";
+}
+function openjs(){
+    content1.style.transform = "translateX(100%)";
+    content2.style.transform = "translateX(100%)";
+    content3.style.transform = "translateX(0)";
+    
+    btn3.style.color= "#ff7846";
+    btn1.style.color= "#000";
+    btn2.style.color= "#000";
+    
+    content1.style.transitionDelay = "0s";
+    content1.style.transitionDelay = "0s";
+    content1.style.transitionDelay = "0.3s";
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
